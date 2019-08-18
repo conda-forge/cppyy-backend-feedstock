@@ -1,5 +1,5 @@
 {% set name = "cppyy-backend" %}
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 {% set cling_name = "clingwrapper" %}
 {% set cling_version = "6.15.2.9" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cppyy-backend/cppyy-backend-{{ version }}.tar.gz
-  sha256: 73af43bfc34229be24372207b2ec25f8783feeb28541347d65a97514a25bb7dd
+  sha256: e83554edcac0420c3b1941c0f91e0fc6680e38fc31961702c11cd1bafbf15c2e
   patches:
   - manylinux.patch
 
