@@ -1,7 +1,7 @@
 {% set name = "cppyy-backend" %}
-{% set version = "1.10.7" %}
+{% set version = "1.10.8" %}
 {% set cling_name = "clingwrapper" %}
-{% set cling_version = "6.18.2.6" %}
+{% set cling_version = "6.18.2.7" %}
 
 package:
   name: {{ name }}
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cppyy-backend/cppyy-backend-{{ version }}.tar.gz
-  sha256: 57e7773ce78ee2f22307c5f44f13d203af7b11d001dbe1a0b07f430da4e54b90
+  sha256: 433b088c4d6a48b6836fd6578d783ec3b6264953f8ce1ea94def7d54a0c2ef33
 
 build:
   number: 0
-  skip: True  # [win]
-  script: "{{ PYTHON }} -m pip install -vv --no-deps ."
+  skip: true  # [win]
+  script: {{ PYTHON }} -m pip install -vv --no-deps .
 
 requirements:
   build:
@@ -38,7 +38,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Automatic Python-C++ bindings'
+  summary: Automatic Python-C++ bindings
   description: |
     C/C++ wrapper around Cling, the LLVM-based interactive C++ interpreter, for
     use by cppyy, providing stable C and C++ Reflection APIs.
