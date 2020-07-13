@@ -5,7 +5,7 @@ Home: https://pypi.org/project/cppyy-backend/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Automatic Python-C++ bindings
 
