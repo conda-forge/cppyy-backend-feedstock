@@ -1,7 +1,7 @@
 {% set name = "cppyy-backend" %}
 {% set version = "1.14.3" %}
 {% set cling_name = "clingwrapper" %}
-{% set cling_version = "6.21.5" %}
+{% set cling_version = "6.21.6" %}
 
 package:
   name: {{ name }}
