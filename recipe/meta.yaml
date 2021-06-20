@@ -1,6 +1,5 @@
 {% set name = "cppyy-backend" %}
 {% set version = "1.14.5" %}
-{% set cling_name = "clingwrapper" %}
 {% set cling_version = "6.25.0" %}
 
 package:
@@ -14,6 +13,8 @@ source:
 build:
   number: 1
   skip: true  # [win]
+  # cppyy-cling is not cross-compiled for pypy yet
+  skip: true  # [build_platform != target_platform and python_impl == "pypy"]
   script: {{ PYTHON }} -m pip install -vv --no-deps .
 
 requirements:
