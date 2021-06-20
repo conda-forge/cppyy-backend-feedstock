@@ -1,7 +1,7 @@
 {% set name = "cppyy-backend" %}
 {% set version = "1.14.5" %}
 {% set cling_name = "clingwrapper" %}
-{% set cling_version = "6.21.7" %}
+{% set cling_version = "6.25.0" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: eee51fe76cad634459abeb9391cc06e076e375a7d2372c0e7ddea9c69973dfd6
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install -vv --no-deps .
 
