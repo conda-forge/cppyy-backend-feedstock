@@ -9,6 +9,8 @@ package:
 source:
   url: https://pypi.io/packages/source/c/cppyy-backend/cppyy-backend-{{ version }}.tar.gz
   sha256: eee51fe76cad634459abeb9391cc06e076e375a7d2372c0e7ddea9c69973dfd6
+  patches:
+    - cflags.patch  # [build_platform != target_platform]
 
 build:
   number: 1
