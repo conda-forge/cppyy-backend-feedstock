@@ -1,6 +1,5 @@
 {% set name = "cppyy-backend" %}
 {% set version = "1.14.7" %}
-{% set cling_version = "6.25.1" %}
 
 package:
   name: {{ name }}
@@ -29,10 +28,10 @@ requirements:
     - pip
     # This is the only package that will ever depend upon cppyy-cling so we pin
     # it exactly. 
-    - cppyy-cling {{ cling_version }}
+    - cppyy-cling >=6.25.2
   run:
     - python
-    - cppyy-cling {{ cling_version }}
+    - cppyy-cling >=6.25.2
 
 test:
   imports:
