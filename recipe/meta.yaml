@@ -26,12 +26,12 @@ requirements:
   host:
     - python
     - pip
-    # This is the only package that will ever depend upon cppyy-cling so we pin
-    # it exactly. 
-    - cppyy-cling 6.25.2
+    # cppyy-cling, cppyy-backend, cpycppyy and cppyy are essentially a single package, so we always pin exactly between these.
+    - cppyy-cling ==6.25.2
   run:
     - python
-    - cppyy-cling 6.25.2
+    # cppyy-cling, cppyy-backend, cpycppyy and cppyy are essentially a single package, so we always pin exactly between these.
+    - cppyy-cling ==6.25.2
 
 test:
   imports:
