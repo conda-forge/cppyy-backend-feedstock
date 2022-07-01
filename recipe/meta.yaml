@@ -1,5 +1,5 @@
 {% set name = "cppyy-backend" %}
-{% set version = "1.14.8" %}
+{% set version = "1.14.9" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cppyy-backend/cppyy-backend-{{ version }}.tar.gz
-  sha256: d8432f575bf423183a2d6f634fcab19cf659e9a370bd0ca7056d11bc4680d80d
+  sha256: a7871eaf5cb081387c46d1bbec75c7b9c764a6cfaf95f6e4707f9be9c02a9221
   patches:
     - cflags.patch  # [build_platform != target_platform]
 
@@ -27,11 +27,11 @@ requirements:
     - python
     - pip
     # cppyy-cling, cppyy-backend, cpycppyy and cppyy are essentially a single package, so we always pin exactly between these.
-    - cppyy-cling ==6.25.3
+    - cppyy-cling ==6.27.0
   run:
     - python
     # cppyy-cling, cppyy-backend, cpycppyy and cppyy are essentially a single package, so we always pin exactly between these.
-    - cppyy-cling ==6.25.3
+    - cppyy-cling ==6.27.0
 
 test:
   imports:
