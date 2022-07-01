@@ -10,9 +10,10 @@ source:
   sha256: a7871eaf5cb081387c46d1bbec75c7b9c764a6cfaf95f6e4707f9be9c02a9221
   patches:
     - cflags.patch  # [build_platform != target_platform]
+    - aarch64.patch  # [aarch64]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   # cppyy-cling is not cross-compiled for pypy yet
   skip: true  # [build_platform != target_platform and python_impl == "pypy"]
