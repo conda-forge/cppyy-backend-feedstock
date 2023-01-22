@@ -1,5 +1,5 @@
 {% set name = "cppyy-backend" %}
-{% set version = "1.14.9" %}
+{% set version = "1.14.10" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cppyy-backend/cppyy-backend-{{ version }}.tar.gz
-  sha256: a7871eaf5cb081387c46d1bbec75c7b9c764a6cfaf95f6e4707f9be9c02a9221
+  sha256: 51ac01c4cca28ef54544ce0b41355d885242f1a0178619bea071f5c43fd03dac
   patches:
     - cflags.patch  # [build_platform != target_platform]
 
