@@ -1,11 +1,11 @@
-About cppyy-backend
-===================
+About cppyy-backend-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cppyy-backend-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/cppyy-backend/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cppyy-backend-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automatic Python-C++ bindings
 
