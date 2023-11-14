@@ -1,5 +1,5 @@
 {% set name = "cppyy-backend" %}
-{% set version = "1.14.10" %}
+{% set version = "1.15.0" %}
 
 package:
   name: {{ name }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cppyy-backend/cppyy-backend-{{ version }}.tar.gz
-  sha256: 51ac01c4cca28ef54544ce0b41355d885242f1a0178619bea071f5c43fd03dac
+  sha256: 4197bfb4f98d2b94d5d12ddca314b3ca3d3b089dc475d581beb092c2a703d183
   patches:
     - cflags.patch  # [build_platform != target_platform]
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   # cppyy-cling is not cross-compiled for pypy yet
   skip: true  # [build_platform != target_platform and python_impl == "pypy"]
