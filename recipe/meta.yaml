@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/cppyy-backend/cppyy-backend-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/c/cppyy-backend/cppyy-backend-{{ version }}.tar.gz
   sha256: 8d0ec169f6ea40d26999a61b274ce2ac880082e8d16aace6a0702933d3d835fc
   patches:
     - cflags.patch  # [build_platform != target_platform]
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   # cppyy-cling is not cross-compiled for pypy yet
   skip: true  # [build_platform != target_platform and python_impl == "pypy"]
@@ -23,9 +23,11 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
+    - setuptools
     # cppyy-cling, cppyy-backend, cpycppyy and cppyy are essentially a single package, so we always pin exactly between these.
     - cppyy-cling ==6.30.0
   run:
