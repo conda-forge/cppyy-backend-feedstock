@@ -1,8 +1,7 @@
-{% set name = "cppyy-backend" %}
 {% set version = "1.15.3" %}
 
 package:
-  name: {{ name }}
+  name: cppyy-backend
   version: {{ version }}
 
 source:
