@@ -46,7 +46,7 @@ about:
     C/C++ wrapper around Cling, the LLVM-based interactive C++ interpreter, for
     use by cppyy, providing stable C and C++ Reflection APIs.
   doc_url: http://cppyy.readthedocs.io/
-  dev_url: https://bitbucket.org/wlav/cppyy-backend/src
+  dev_url: https://github.com/wlav/cppyy-backend
 
 extra:
   recipe-maintainers:
