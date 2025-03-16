@@ -50,7 +50,7 @@ about:
     C/C++ wrapper around Cling, the LLVM-based interactive C++ interpreter, for
     use by cppyy, providing stable C and C++ Reflection APIs.
   homepage: https://pypi.org/project/cppyy-backend/
-  repository: https://bitbucket.org/wlav/cppyy-backend/src
+  repository: https://github.com/wlav/cppyy-backend
   documentation: http://cppyy.readthedocs.io/
 
 extra:
