@@ -9,7 +9,7 @@ Package license: BSD-3-Clause
 
 Summary: Automatic Python-C++ bindings
 
-Development: https://bitbucket.org/wlav/cppyy-backend/src
+Development: https://github.com/wlav/cppyy-backend
 
 Documentation: http://cppyy.readthedocs.io/
 
